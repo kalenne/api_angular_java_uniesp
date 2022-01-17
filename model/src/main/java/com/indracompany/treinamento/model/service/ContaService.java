@@ -14,7 +14,7 @@ import com.indracompany.treinamento.model.repository.ContaRepository;
 import lombok.extern.log4j.Log4j2;
 
 @Service
-@Log4j2
+
 public class ContaService extends GenericCrudService<Conta, Long, ContaRepository>{
 	
 	@Autowired
@@ -55,9 +55,7 @@ public class ContaService extends GenericCrudService<Conta, Long, ContaRepositor
 		DepositoDTO depositoDto = transferenciaBancariaDto.getDestino();
 		depositoDto.setValor(transferenciaBancariaDto.getValor());
 		deposito(depositoDto);
-		
-		log.info("retorno saque: {}", retornoSaque);
-		
+				
 		return retornoSaque;
 }
 }

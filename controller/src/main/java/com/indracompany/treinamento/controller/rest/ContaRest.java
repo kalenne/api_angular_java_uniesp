@@ -23,7 +23,7 @@ import com.indracompany.treinamento.model.service.ContaService;
 import lombok.extern.log4j.Log4j2;
 
 @RestController
-@Log4j2
+
 @RequestMapping("rest/contas")
 public class ContaRest extends GenericCrudRest<Conta, Long, ContaService>{
 	
